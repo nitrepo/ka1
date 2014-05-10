@@ -7,7 +7,7 @@ set :default_environment, {
 
 set :ssh_options, { :forward_agent => true }
 set :application, "koresol"
-set :repository, "https://github.com/nitrepo/ka1.git"
+set :repository, "https://github.com/nitrepo/ka2.git"
 set :user, "root"
 
 set :use_sudo, false
