@@ -66,6 +66,7 @@ body {
       {
     .navbar-inverse .nav-collapse .nav > li > a:hover{background-color: #e6d45a;
                             color:#000;
+                            .flex-control-nav{display: none;
                               }
         .span3{padding-left: 0px;
                 margin-top: 0px;
