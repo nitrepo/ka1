@@ -1,0 +1,53 @@
+<div class="container">
+<nav id="next_prev_article">
+  <% if @post.next.present? -%>
+    <%= link_to h(truncate(@post.next.title)) + " &#187;".html_safe,
+                refinery.blog_post_path(@post.next),
+                :class => 'next' %>
+  <% end -%>
+
+  <%= link_to t('blog_home', :scope => 'refinery.blog.posts.show'),
+              refinery.blog_root_path,
+              :class => 'home' %>
+
+  <% if @post.prev.present? -%>
+    <%= link_to "&#171; ".html_safe + h(truncate(@post.prev.title)),
+                refinery.blog_post_path(@post.prev),
+                :class => 'prev' %>
+  <% end -%>
+</nav><!-- /next_prev_article --></div>
+
+<div class="container">
+  
+  <div class="span7">
+<% content_for :body do %>
+  <div id="show_blog_post">
+    <%= render 'post' %>
+  </div>
+
+  <%= render 'comments' %>
+<% end %>
+
+<%= render '/refinery/blog/shared/body_content_right' %>
+
+<%= render "/refinery/content_page", :remove_automatic_sections => true %>
+
+<% content_for :stylesheets, stylesheet_link_tag('refinery/blog/frontend') %>
+<% content_for :javascripts do %>
+  <%# enable AJAX'd post nav at your own risk until html5 history API implemented. %>
+  <%#= javascript_include_tag('refinery/blog/frontend') %>
+  <script src="http://w.sharethis.com/button/buttons.js"></script>
+  <script>stLight.options({publisher:'<%= Refinery::Blog.share_this_key %>'});</script>
+<% end if Refinery::Blog::Post::ShareThis.enabled? %>
+</div>
+<div class="span3" style="float:right;">
+  <section id="blog_posts">
+  <%= render "/refinery/blog/shared/rss_feed" %>
+  <%= render "/refinery/blog/shared/categories" %>
+  <%= render "/refinery/blog/shared/tags" %>
+  <%= render "/refinery/blog/shared/posts" %>
+  
+  <%= blog_archive_widget %>
+
+</div>
+</div>

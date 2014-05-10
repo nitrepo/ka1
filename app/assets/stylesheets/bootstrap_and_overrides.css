@@ -1,0 +1,90 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+  
+			h2{font-size: 20px;}
+
+      body{color: #fff;}
+
+      #rss_feed_subscribe {
+    display: block;
+    padding-left: 25px;
+    background: url("/assets/refinery/blog/rss-feed.png") no-repeat scroll 0% 0% transparent;
+    background-position:0px 4px; 
+}
+
+    .span3 #rss_feed_subscribe {
+    display: block;
+    padding-left: 25px;
+    background: url("/assets/refinery/blog/rss-feed.png") no-repeat scroll 0% 0% transparent;
+    background-position:0px 4px; 
+}
+
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 23px;
+    color: #ccc;
+}
+
+.navbar-inverse .navbar-inner {
+    background-color: rgb(27, 27, 27);
+    opacity:0.5;
+    filter:Alpha(opacity=50);
+    background-image: linear-gradient(to bottom, rgb(34, 34, 34), rgb(17, 17, 17));
+    background-repeat: repeat-x;
+    border-color: rgb(37, 37, 37);
+    color: #fff;
+}
+
+.navbar-fixed-bottom {
+    position: fixed;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    margin-bottom: 0px;
+    opacity:0.5;
+    filter:Alpha(opacity=50);
+}
+
+.navbar .nav > li > a:hover{background-color: #e6d45a;
+                            color:#000;
+                              }
+ .navbar .nav > li> a{color:#fff;}                             
+                .span3 a {color: #e6d45a;}
+
+                .span3 a:hover{color:#fff;}
+
+                .span4 a {color: #e6d45a;}
+
+                .span4 a:hover{color:#fff;}
+      @media screen and (min-width: 0px) and (max-width: 600px)
+      {
+    .navbar-inverse .nav-collapse .nav > li > a:hover{background-color: #e6d45a;
+                            color:#000;
+                              }
+        .span3{padding-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;}
+                
+      }
+      @media screen and (min-width: 800px) and (max-width: 1500px)
+      {
+        .navbar-inverse .nav-collapse .nav > li > a:hover{background-color: #e6d45a;
+                            color:#000;
+                              }
+        .span3{padding-left: 70px;
+                margin-top: 150px;
+                margin-right: 20px;
+                border-left:1px solid #fff;}
+                
+             .span3{   position: fixed;
+                        top:15px;
+                        bottom:320px;
+                        right:0px;
+                        left:auto;}
+      }

@@ -1,0 +1,62 @@
+
+
+
+        <div class="container">
+
+
+
+          <div class="span7">
+  <%= render '/refinery/content_page' %>
+ </div>
+ 
+        <div class="span4" style="float:right;">
+          <h2 style="color:#fff;">Blogs:</h2>
+          <h2><%= ('RSS Feed') %></h2>
+<%= link_to ('Subscribe'), refinery.blog_rss_feed_path, :id => "rss_feed_subscribe"%>
+<h2><%= ('Latest Posts') %></h2>
+  <ul id="blog_posts">
+    <% @blog_posts.each do |blog_post| %>
+      <li class='clearfix' >
+        <%= link_to blog_post.title, refinery.blog_post_path(blog_post) %>
+      </li>
+    <% end %>
+  </ul>
+
+ <% @archive %>
+
+ <h2 style="color:#fff;">Share|Email|Print This Page:</h2>
+ <!-- AddThis Button BEGIN -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-53673b1b32318341"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share" style="border:0"/></a>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53673b1b32318341"></script>
+<!-- AddThis Button END -->
+    </div>
+        
+            
+  </div>
+  
+  
+ </div>
+  <!--#footer navigation-->
+  
+  
+
+  <!--<div id="footersidebar">
+    <div data-role="page" id="page">
+      <div data-role="fieldcontain">
+        <label for="selectmenu" class="select">Usefull_Links:</label>
+        <select name="selectmenu" id="selectmenu"style="width:100%;">
+          <option value="option1">News & Blogs</option>
+          <option value="option2">Services</option>
+          <option value="option3">Video Tranning</option>
+        </select>
+      </div>-->
+      
+      </div>
+</div>
+ 
+
+  
+    </div>
+
+

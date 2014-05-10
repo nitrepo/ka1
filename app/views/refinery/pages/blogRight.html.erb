@@ -1,0 +1,13 @@
+
+<h2><%= ('Rss') %></h2>
+<%= link_to ('Subscribe'), refinery.blog_rss_feed_path, :id => "rss_feed_subscribe"%>
+<h2><%= ('Latest Posts') %></h2>
+  <ul id="blog_posts">
+    <% @blog_posts.each do |blog_post| %>
+      <li class='clearfix'>
+        <%= link_to blog_post.title, refinery.blog_post_path(blog_post) %>
+      </li>
+    <% end %>
+  </ul>
+
+ <% @archive %>

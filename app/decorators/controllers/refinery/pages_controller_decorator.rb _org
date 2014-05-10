@@ -1,0 +1,4 @@
+efinery::Blog::PostsController.class_eval do
+layout "tblayout"
+
+end
