@@ -65,9 +65,9 @@ body {
       @media screen and (min-width: 0px) and (max-width: 600px)
       {
     .navbar-inverse .nav-collapse .nav > li > a:hover{background-color: #e6d45a;
-                            color:#000;
-                            .flex-control-nav{display: none;
-                              }
+                            color:#000;}
+                            .flex-control-nav{display: none;}
+                              
         .span3{padding-left: 0px;
                 margin-top: 0px;
                 margin-right: 0px;}
