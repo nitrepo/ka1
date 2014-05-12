@@ -1,0 +1,124 @@
+      
+ <div class="container">
+
+  <div id='playerUKXdeherVFVs'></div>
+<script type='text/javascript'>
+    jwplayer('playerUKXdeherVFVs').setup({
+        file: 'http://www.youtube.com/watch?v=oy6NvWeVruY',
+        title: 'Relaxation Piano Music - Chopin',
+        width:'100%',
+        aspectratio: '7:3',
+        'height':"true",
+
+
+    'playlist': [{
+              'file': 'https://www.youtube.com/watch?v=FyyIvAwwMPM', 
+              'image': 'images/522px_lady at the virginals.jpg',
+              'title': 'Jan Vermeer and the Camera Obscura - video',
+    'description': 'Discussion of whether Jan Vermeer used a Camera Obscura in his work'
+
+          },{ 
+
+              'file': 'https://www.youtube.com/watch?v=uxg4fsdGOjk', 
+              'description': 'Discussion of whether Jan Vermeer used a Camera Obscura in his work'
+    
+    },{
+
+      'file': 'https://www.youtube.com/watch?v=ujLFsZfa_MY'
+
+
+
+
+    },{
+
+      'file': 'https://www.youtube.com/watch?v=mInPCUXo0lw'
+
+    },{
+
+      'file': 'http://www.videojug.com/interview/stock-market-terms?ap=0&embed=t'
+
+    }
+    
+          // Add more video files here in the above format 
+          
+    ],
+
+
+          // If you are going to have any sort of playlist you must have these next options
+      
+              listbar: {
+        position: "bottom",
+        size: 100
+      }
+    });
+</script>
+
+<div style="border:1px solid #ccc;"></div>
+
+ <div class="container">
+  <div class="span7">
+  <p style="text-align:justify;"><%= render '/refinery/content_page' %></p>
+ </div>
+
+  <!-- Sidebar -->
+        
+        <div class="span4" style="float:right;" >
+
+          <h2 style="color:#fff;">Blogs:</h2>
+          <h2><%= ('RSS Feed') %></h2>
+<%= link_to ('Subscribe'), refinery.blog_rss_feed_path, :id => "rss_feed_subscribe"%>
+<h2><%= ('Latest Posts') %></h2>
+  <ul id="blog_posts" style="margin:0px;">
+    <% @blog_posts.each do |blog_post| %>
+      <li class='clearfix' >
+        <%= link_to blog_post.title, refinery.blog_post_path(blog_post) %>
+      </li>
+    <% end %>
+  </ul>
+
+ <% @archive %>
+ <h2 style="color:#fff;">Share|Email|Print This Page:</h2>
+ 
+ <!-- Addthis -->
+<a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=300&amp;pubid=ra-53673b1b32318341"><img src="http://s7.addthis.com/static/btn/v2/lg-share-en.gif" width="125" height="16" alt="Bookmark and Share"/></a>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53673b1b32318341"></script>
+
+
+
+    </div>
+        
+
+            
+  </div>
+  
+
+
+
+
+
+ 
+
+  <!--#footer navigation-->
+  
+
+  <!--<div id="footersidebar">
+    <div data-role="page" id="page">
+      <div data-role="fieldcontain">
+        <label for="selectmenu" class="select">Usefull_Links:</label>
+        <select name="selectmenu" id="selectmenu"style="width:100%;">
+          <option value="option1">News & Blogs</option>
+          <option value="option2">Services</option>
+          <option value="option3">Video Tranning</option>
+        </select>
+      </div>-->
+      
+      </div>
+</div>
+ 
+  
+   
+
+    <!--facebook-->
+
+ </div>
