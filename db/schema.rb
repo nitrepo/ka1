@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140509163934) do
+ActiveRecord::Schema.define(:version => 20140515202811) do
 
   create_table "events", :force => true do |t|
     t.string   "title"
@@ -308,6 +308,7 @@ ActiveRecord::Schema.define(:version => 20140509163934) do
     t.text     "meta_description"
     t.datetime "created_at",       :null => false
     t.datetime "updated_at",       :null => false
+    t.string   "meta_keywords"
   end
 
   add_index "seo_meta", ["id"], :name => "index_seo_meta_on_id"

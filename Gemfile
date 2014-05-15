@@ -45,6 +45,7 @@ gem 'jwplayer-rails', '~> 1.0.1'
 # Refinery CMS
 gem 'refinerycms', '~> 2.1.0'
 
+
 # Optionally, specify additional Refinery CMS Extensions here:
   gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
   gem 'refinerycms-blog', '~> 2.1.0'
@@ -52,4 +53,7 @@ gem 'refinerycms', '~> 2.1.0'
   gem 'refinerycms-search', '~> 2.1.0'
   gem 'refinerycms-page-images', '~> 2.1.0'
   gem 'refinerycms-videojs'
+  
+  gem 'seo_meta'
+  gem 'seo_meta_keywords'
  

@@ -4,7 +4,7 @@ require 'seo_meta'
 module Refinery
   module Blog
     class Post < ActiveRecord::Base
-
+      is_seo_meta
       translates :title, :body, :custom_url, :custom_teaser, :slug, :include => :seo_meta
 
       extend FriendlyId
